@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+
+<!--
+O site desenvolvido é um projeto de conclusão de curso da 2a turma da {reprograma}.
+Início do projeto: 07/11/2016 | Conclusão: 10/11/2016.
+-->
+
+<html>
+
+<head>
+    <title>jogAMOs</title>
+
+    <meta charset="utf-8" />
+
+    <!--INICIO | favicon-->
+    <link rel="icon" id="favicon" href="images/favicon.png" type="Image/x-icon">
+    <!--FIM | favicon-->
+
+    <!--INICIO | fonte do logo-->
+    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <!--FIM | fonte do logo-->
+
+
+    <!-- INICIO | Estilo e interação do bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- FIM | Estilo e interação do bootstrap -->
+    <!--INICIO | folha de estilo-->
+    <link rel="stylesheet" href="assets/css/estilo.css">
+    <!--FIM | folha de estilo-->
+</head>
+
+<body>
+    <a name="top"></a>
+    <!--INICIO | do cabeçalho-->
+    <header id="introducao">
+        <img id="imagemtopo" src="images/logo_ajudamos.png" alt="Logo da JogAMOs. São 2 bolões sorridentes um ao lado do outro. Um balão azul e outro amarelo.">
+        <h1>jogAMOs</h1>
+        <p>Divirta-se ajudando a construir um mundo de gentilezas!</p>
+        <button class="btn btn-default" onclick="download()">Baixe agora!</button>
+    </header>
+    <!--FIM | do cabeçalho-->
+    <!--INICIO | das seções-->
+    <div class="corpodotextoprincipal container">
+        <!--INICIO | dos itens de navegação do menu-->
+        <nav class="navbar navbar-default nav-right">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle glyphicon glyphicon-menu-hamburger" data-toggle="collapse" data-target="#itensmenu"></button>
+                </div>
+                <ul id="itensmenu" class="nav navbar-nav collapse navbar-collapse">
+                    <li class="active"><a href="#primeiro">Conheça</a></li>
+                    <li><a href="#segundo">Divirta-se</a></li>
+                    <li><a href="#terceiro">Desafios</a></li>
+                    <li><a href="#quarto">Cadastre sua ONG</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--FIM | dos itens de navegação do menu-->
+        <section id="primeiro" class="row">
+            <div class="col-md-12 col-xl-1">
+                <h2>Um jogo divertido e atitudes generosas!</h2>
+                <p>Ganhe amigos de causas comuns, faça gentilezas diariamente, bata recordes, ganhe prêmios!</p>
+                <img class="imagemprimeira" src="images/imagemprimeira.png" alt="Definir">
+            </div>
+        </section>
+        <section id="segundo" class="row">
+            <div class="col-md-12">
+                <h2>Ajude, jogue e divirta-se</h2>
+                <ul>
+                    <li>Ganhe pontos e passe de fase</li>
+                    <li>Conecte-se a redes sociais</li>
+                    <li>Jogue com seus amigos</li>
+                    <li>Colecione stickers</li>
+                </ul>
+            </div>
+        </section>
+        <hr>
+        <section id="terceiro" class="row">
+            <div class="col-md-6">
+                <h2>Desafios</h2>
+                <ul>
+                    <li>Doar nota fiscal</li>
+                    <li>Criar ou participar de uam evento comunitário</li>
+                    <li>Divulgar uma ONG</li>
+                    <li>Ajudar em uma vaquinha on-line</li>
+                    <li>Ajudar a encontrar o dono de um pet perdido</li>
+                    <li>Doar objetos que não usa</li>
+                    <li>Fazer coleta seletiva</li>
+                    <li>Ajudar em uma vaquinha on-line</li>
+                    <li>Acompanhar causas sociais</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <img class="imagemapp" src="images/app.png" alt="Imagem de um celular com o aplicativo aberto.">
+            </div>
+        </section>
+        <hr>
+        <section id="quarto" class="row">
+            <div class="col-md-4">
+                <img class="balaoazul" src="images/balloons.png" alt="Balões na cor azul.">
+            </div>
+            <div class="col-md-8">
+                <h2>Quer cadastrar sua ONG?</h2>
+                <p> Deixe seu e-mail.</p>
+                <a  href="#" id="subir"></a>
+                <form class="form-horizontal">
+                    <div class="form-group ajusteform">
+                        <label class="control-label col-sm-2" for="email">E-mail:</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="email" placeholder="Insira seu e-mail aqui.">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button class="btn btn-default" onclick="contato()">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <div>
+
+        </div>
+    </div>
+    <!--FIM | das seções principais-->
+    <!--INICIO | rodapé-->
+    <footer id="rodape" class="container">
+        <section>
+            <h2 class="entreemcontato">A jogAMOs</h2>
+            <dl class="alt">
+                <dt>Endereço:</dt>
+                <dd>Indianopolis, São Paulo - Brasil</dd>
+                <dt>Telefone:</dt>
+                <dd>(00) 000-0000</dd>
+                <dt>E-mail:</dt>
+                <dd>contato@ajogamos.com.br</dd>
+            </dl>
+        </section>
+        <a href="#top">Voltar ao topo</a>
+        <p class="copyright"> Sidnéia S. França <span>|</span> 2016</p>
+    </footer>
+    <!--FIM | rodapé-->
+
+    <!--INICIO | js-->
+    <script>
+
+    //download do app
+    function download (){
+        alert("Ops! Ainda vamos lançar a versão beta.");
+    }
+
+    // manter o item do menu selecionado ativo
+    $(".nav a").on("click", function(){
+    $(".nav").find(".active").removeClass("active");
+    $(this).parent().addClass("active");});
+    
+    // Envio do e-mail
+    function contato(){
+        var mail = document.getElementById("email").value;
+        if (mail != "") {
+            alert("Recebemos seu endereço de e-mail! Em breve entraremos em contato.");
+        } else {
+                alert("Insira um endereço de e-mail válido.");
+        }  
+    };
+    </script>
+    <!--FIM | js-->
+</body>
+
+</html>

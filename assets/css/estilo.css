@@ -1,0 +1,150 @@
+body{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 19px;
+    background-color: lightgray;
+    margin: 10px;
+    padding: 10px;
+    background-image: url(../../images/overlay.png), -webkit-linear-gradient(45deg, #d8a413 15%, #fedd3d 85%);
+}
+
+header {
+    margin-bottom: 15px;
+}
+
+button {
+    margin: 5px;
+}
+
+
+h2 {
+    font-family: 'Coiny', cursive;
+    font-size: 35px;
+}
+
+h1 {
+    font-family: 'Coiny', cursive;
+    color: #333e48;
+    font-size: 45px;
+}
+
+.entreemcontato, 
+dl, 
+a {
+    color: #ffffff;
+}
+
+li {
+    list-style: none;
+}
+
+.col-md-12 {
+    padding: 5px;
+}
+
+/*Ajustes no Menu | Navegação*/
+.navbar {
+    background: #ffffff;
+    border: none;
+    box-shadow: none;
+    padding: 5px;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #ffffff;
+    background-color: #fedd3d;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.open>a {
+    background-image: none;
+}
+/*FIM ajustes*/
+
+#imagemtopo {
+    width: 16%;
+    height: auto;
+}
+
+#introducao {
+    text-align: center;
+}
+
+section {
+    min-height: 30vh;
+    text-align: center;
+}
+
+.corpodotextoprincipal{
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+hr {
+    border-top: 1px solid #5850a5;
+}
+
+.imagemprimeira{
+    width: 100%;
+    height: auto;
+}
+
+.imagemapp {
+    width: 60%;
+    height: auto;
+
+}
+
+.balaoazul {
+    width: 45%;
+    height: auto;
+    background-color: #5850a5;
+    border-radius: 100px;
+}
+
+.ajusteform {
+    padding: 20px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #675dc6;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #675dc6;
+}
+
+.btn-default {
+    color: #ffffff;
+    text-shadow: none;
+    background-image: none;
+    background-color: #675dc6;
+    border-color: #675dc6;
+}
+
+.btn-default:hover {
+    color: #ffffff;
+    text-shadow: none;
+    background-image: none;
+    background-color: #ff6699;
+    border-color: #ff6699;
+}
+
+span {
+    color: #fedd3d;
+}
+
+.copyright {
+    text-align: right;
+    font-size: 14px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+}
